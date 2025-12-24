@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danntdm</title>
+    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+
+  </head>
+
+  
+  <body>
+  
+  <div class="site">
+  
+    <div class = "Topsection"> 
+      <div class="banner"></div>
+      <div class="navbar">
+          <ul>
+            <li><a href="https://danntdm.neocities.org/">Home</a></li>
+            <li><button type= "button" id = "openAbout">About & FAQ</button></li>
+            <li><button type= "button" id = "openPortfolio">Portfolio</button></li>
+            <li><button type= "button" id = "openContact">Contact</button></li>
+            
+          </ul>
+      </div>
+    </div>
+    
+    <div class="Bottomsection">
+      <div class="homeContent">
+        <div class='homeContentInner'>
+          <main>
+            <h3>&lt;---------- Welcome ----------&gt;</h3>
+            <p>/*</p>
+            <p>
+              Hi, my name’s Daniel!
+            </p>
+        
+            <p>
+              I’m a Computer Science student building projects and many other ideas.
+              I do research on AI, and part-time game dev. I've dabbled with electronics,
+              robotics and more — I don’t really stick to just one thing.
+            </p>
+            <p>*/</p>
+            
+            <p>------------------------------------------------------------</p>
+            <p><br>/*</p>
+             <img src="Images/Dodecahedron.gif" class="cornerGif" alt="decorative gif">
+  
+            <p><br>
+              This site is more or less a personal space — just to experiment, document
+              projects, and keep track of whatver im doing.
+            </p>
+        
+            <p><br><br><br>
+              My GitHub:
+              <a href="https://github.com/Danntdm" target="blank" class="gitlink">
+                github.com/Danntdm
+              </a>
+            </p>
+            <p>*/</p>
+          </main>
+          </div>
+      </div>
+    
+    </div>
+  </div>
+  
+  <div class="panels">
+  
+    <div class="aboutPanel" id = "aboutPanel">
+      <div class="aboutHeader" id="aboutHeader">
+          <span class="headerText">About & FAQ</span>
+          <button type="button" id="closeAbout">x</button>
+      </div>
+      <div class="aboutContent">
+          <div class="aboutInner">
+              <strong>About Me</strong>
+              <p>
+                  This window just contains general info about the site and myself.
+                  The site itself kinda just serves as a personal area to put random stuff, whether it be projects,
+                  thoughts or whatever I'm doing at the time, can't say I'll be consistent with updates
+                  but! I'll try.
+              </p>
+  
+              <p>
+                  I'm currently a third-year college student. Most of my time is spent on a lot of things, but notably at school I'm starting on AI research with some peers, I aim to make it more ethical meanwhile limiting privacy issues that come with most AI services. Though I do a lot of other things too. For example, one cool project I did was a one-off thing where I helped create an interactible but disability friendly book for kids.
+              </p>
+  
+              <p>
+                  Outside of that I loveeee sports and music. Real Madrid for life. Music-wise I've been playing instruments for a while, mainly the guitar but I can also play some piano and bass guitar! Some of my favorite genres are RnB, jazz, and a ton more (Listen to Shibuya-kei NOW).
+              </p>
+  
+              <hr class="etch etch-margin">
+  
+              <div class="likesDislikesContainer">
+                  <div class="likesDislikesColumn">
+                      <strong>Likes:</strong>
+                      <ul class="contentList">
+                          <li>Science (its cool)</li>
+                          <li>CARS!!</li>
+                          <li>Cyberpunk 2077</li>
+                          <li>Cymbals (the band)</li>
+                          <li>Shibuya-Kei</li>
+                      </ul>
+                  </div>
+                  <div class="likesDislikesColumn">
+                      <strong>Dislikes:</strong>
+                      <ul class="contentList">
+                          <li>Tomatoes</li>
+                          <li>AI (unethical ai)</li>
+                          <li>Mosquitos</li>
+                      </ul>
+                  </div>
+              </div>
+
+          <hr class="etch etch-margin">
+
+          <strong>FAQ</strong>
+          <p><strong>What is this site?</strong><br>
+          A digital portfolio for whatever I'm up to.</p>
+      
+          <p><strong>What things are used?</strong><br>
+          Website itself is just HTML, CSS, JavaScript, otherwise just depends on the project.</p>
+      
+          <p><strong>Is this site finished?</strong><br>
+          No. Portfolio tab ain't done but at least it looks good. Ill update it with things when I can.</p>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+    <div class="portfolioPanel" id="portfolioPanel">
+      <div class="portfolioHeader" id="portfolioHeader">
+        <span class="portfolioText">Portfolio</span>
+        <button type="button" id="closePortfolio">x</button>
+      </div>
+      <div class="portfolioContent" id="portfolioContent">
+        <div class="portfolioInner">
+          <p class="selectPrompt">Select an item to view details:</p>
+          <hr class="etch" style="margin: 15px 0;">
+
+          
+          <div class="projectGrid">
+            
+            <div class="project-item">
+              <div class="project-icon">📂</div>
+              <div class="project-name"><strong>Interactive_Book.exe</strong></div>
+              <div class="project-desc">Disability-friendly project for kids.</div>
+            </div>
+
+            <div class="project-item">
+              <div class="project-icon">📂</div>
+              <div class="project-name"><strong>AI_Research.log</strong></div>
+              <div class="project-desc">University research on AI.</div>
+            </div>
+
+            <div class="project-item projectItemEmpty">
+              <div class="project-icon">📄</div>
+              <div class="project-name"><strong>Empty_Slot</strong></div>
+              <div class="project-desc">System waiting for new data...</div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+   <div class="contactPanel" id="contactPanel">
+    <div class="contactHeader" id="contactHeader">
+      <span class="contactText">Contact</span>
+      <button type="button" id="closeContact">x</button>
+    </div>
+    <div class="contactContent" id="contactContent">
+      <div class="contactInner">
+        <strong>Contact Information</strong>
+        <p>If you'd like to get in touch, you're free to visit or message me from any of the platforms below:</p>
+        
+        <ul class="contactList">
+          <li>
+            <strong>Email:</strong> <a href="mailto:danntdm.unopened596@slmail.me">danntdm.unopened596@slmail.me</a>
+          </li>
+          <li>
+            <strong>GitHub:</strong> <a href="https://github.com/Danntdm" target="_blank">github.com/Danntdm</a>
+          </li>
+          <li>
+            <strong>Discord: </strong> <span class="highlightText">danntdm</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    </div>
+    
+    
+    
+    
+  </div>
+  
+  
+  
+  
+<script>
+  function setupWindow(panelId, headerId, openBtnId, closeBtnId) {
+    const windowElement = document.getElementById(panelId);
+    const header = document.getElementById(headerId);
+    const openBtn = document.getElementById(openBtnId);
+    const closeBtn = document.getElementById(closeBtnId);
+
+
+    const originalTop = windowElement.style.top || window.getComputedStyle(windowElement).top;
+    const originalLeft = windowElement.style.left || window.getComputedStyle(windowElement).left;
+
+    openBtn.addEventListener("click", () => {
+      windowElement.style.display = "block";
+      bringToFront();
+    });
+
+    closeBtn.addEventListener("click", () => {
+      windowElement.style.display = "none";
+      
+      windowElement.style.top = originalTop;
+      windowElement.style.left = originalLeft;
+    });
+
+    // --- Drag Logic ---
+    let isDragging = false;
+    let initialX, initialY;
+
+    header.addEventListener('mousedown', startDragging);
+
+    function startDragging(e) {
+      if (e.target.tagName === 'BUTTON' || e.target.closest('button')) return;
+
+      isDragging = true;
+      bringToFront();
+
+      initialX = e.clientX - windowElement.offsetLeft;
+      initialY = e.clientY - windowElement.offsetTop;
+
+      document.addEventListener('mousemove', drag);
+      document.addEventListener('mouseup', stopDragging);
+      e.preventDefault();
+    }
+
+    function drag(e) {
+      if (!isDragging) return;
+      windowElement.style.left = `${e.clientX - initialX}px`;
+      windowElement.style.top = `${e.clientY - initialY}px`;
+    }
+
+    function stopDragging() {
+      isDragging = false;
+      document.removeEventListener('mousemove', drag);
+      document.removeEventListener('mouseup', stopDragging);
+    }
+
+    function bringToFront() {
+      document.querySelectorAll('.aboutPanel, .portfolioPanel, .contactPanel').forEach(p => {
+        p.style.zIndex = "900";
+      });
+      windowElement.style.zIndex = "1000";
+    }
+  }
+
+  setupWindow('aboutPanel', 'aboutHeader', 'openAbout', 'closeAbout');
+  setupWindow('portfolioPanel', 'portfolioHeader', 'openPortfolio', 'closePortfolio');
+  setupWindow('contactPanel', 'contactHeader', 'openContact', 'closeContact');
+</script>
+  
+  
+  </body>
+  
+
+</html>
