@@ -71,9 +71,10 @@ body {
 }
 
 .navbar {
-    background-color: var(--face);
-    padding: 5px;
-    border-bottom: 2px solid #404040;
+    padding: 4px 0 0 6px;
+    margin-bottom: -3px;
+    position: relative;
+    z-index: 2;
     font-family: var(--font-display);
     font-size: 16px;
     -webkit-font-smoothing: none;
@@ -84,11 +85,15 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     list-style-type: none;
-    align-items: center;
+    align-items: flex-end;
     justify-content: flex-start;
-    gap: 4px;
+    gap: 0;
     margin: 0;
     padding: 0;
+}
+
+.navbar li {
+    margin-right: 2px;
 }
 
 .navbar button {
@@ -97,10 +102,13 @@ body {
     color: #000000;
     font-family: inherit;
     font-size: inherit;
-    padding: 6px 14px;
-    border: 0;
     cursor: pointer;
-    box-shadow: var(--bevel-out);
+    padding: 3px 12px 5px;
+    margin-top: 3px;
+    border: 0;
+    border-top: 2px solid #ffffff;
+    border-left: 2px solid #ffffff;
+    border-right: 2px solid #404040;
 }
 
 .navbar button:hover {
@@ -109,14 +117,24 @@ body {
 
 .navbar button:focus-visible {
     outline: 1px dotted #000000;
-    outline-offset: -5px;
+    outline-offset: -4px;
 }
 
-.navbar button:active {
-    box-shadow: var(--bevel-in);
-    padding: 7px 13px 5px 15px;
+.navbar button.isActive {
+    margin-top: 0;
+    margin-bottom: -3px;
+    padding: 5px 14px 8px;
 }
 
+.tabPanel {
+    flex: 1 1 auto;
+    display: flex;
+    padding: 5px;
+    background-color: var(--face);
+    box-shadow: var(--bevel-out);
+    position: relative;
+    z-index: 1;
+}
 
 /* --------------- BOTTOM SECTION --------------- */
 .Bottomsection {
@@ -192,6 +210,7 @@ body {
 
 .clientArea {
     flex: 1 1 auto;
+    min-width: 0;
     background-color: #3A1F2D;
     box-shadow: var(--bevel-in);
 }
@@ -368,6 +387,7 @@ a:hover {
 #proj1 { top: 465px; left: 120px; }
 #proj2 { top: 505px; left: 240px; }
 #proj3 { top: 545px; left: 360px; }
+#proj4 { top: 585px; left: 440px; }
 
 .titlebar {
     background-color: #3b234a;
@@ -470,7 +490,7 @@ a:hover {
 
 .projectGrid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 12px;
 }
 
@@ -543,7 +563,6 @@ a:hover {
     margin: 0;
 }
 
-/* Placeholder copy still waiting on real details */
 .todo {
     color: #6b2b2b;
     font-style: italic;
@@ -975,5 +994,31 @@ a:hover {
     .startItem:hover {
         background-color: transparent;
         color: #000000;
+    }
+}
+
+.window-body a {
+    color: #C8743A;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.window-body a:hover {
+    color: #E08A4F;
+}
+
+
+#portfolioPanel .projectGrid {
+    grid-auto-rows: 150px;
+    max-height: 312px;
+    overflow-y: auto;
+    padding-right: 4px;
+}
+
+@media (max-width: 768px) {
+    #portfolioPanel .projectGrid {
+        grid-auto-rows: auto;
+        max-height: none;
+        overflow-y: visible;
     }
 }

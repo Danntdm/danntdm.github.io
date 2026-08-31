@@ -71,7 +71,6 @@
     focusWindow(win);
   }
 
-  // Show Desktop: back to a clean slate.
   function closeAllWindows() {
     allWindows().forEach(closeWindow);
     closeStartMenu();
@@ -115,6 +114,17 @@
 
 
     if (showDesktop) showDesktop.disabled = tracked === 0;
+
+    syncTabs();
+  }
+
+
+  function syncTabs() {
+    const active = activeWindow();
+    document.querySelectorAll('.navbar [data-open]').forEach((button) => {
+      const win = document.getElementById(button.dataset.open);
+      button.classList.toggle('isActive', Boolean(win) && win === active);
+    });
   }
 
 
@@ -224,6 +234,16 @@
     bar.addEventListener('pointerup', stop);
     bar.addEventListener('pointercancel', stop);
     e.preventDefault();
+  });
+
+  /* --------------- CARD LABELS ---------------*/
+  document.querySelectorAll('.project-item[data-open]').forEach((card) => {
+    const win = document.getElementById(card.dataset.open);
+    const label = card.querySelector('.project-name');
+    if (!win || !label) return;
+
+    const target = label.querySelector('strong') || label;
+    target.textContent = windowTitle(win);
   });
 
   /* --------------- STATUS BAR --------------- */
