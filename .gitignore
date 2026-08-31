@@ -1,6 +1,5 @@
 # The full Windows 98 icon library (~2,400 files) is kept locally for browsing
-# but not committed. Only the icons the site actually uses are tracked, in
-# Images/icons/.
+# but not committed.
 Images/win98_icons/
 
 # OS and editor junk.
