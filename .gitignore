@@ -1,0 +1,17 @@
+# The full Windows 98 icon library (~2,400 files) is kept locally for browsing
+# but not committed. Only the icons the site actually uses are tracked, in
+# Images/icons/.
+#
+# To use a new icon: copy it from Images/win98_icons/png/ into Images/icons/
+# and point at that path. If you forget the copy, it breaks locally straight
+# away rather than silently 404ing on the live site.
+Images/win98_icons/
+
+# OS and editor junk. The icon ZIP arrived carrying ~2,400 of these.
+.DS_Store
+._*
+__MACOSX/
+Thumbs.db
+desktop.ini
+*.swp
+.vscode/

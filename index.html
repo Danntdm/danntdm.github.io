@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
   <head>
     <meta charset="UTF-8">
@@ -9,276 +9,364 @@
 
   </head>
 
-  
+
   <body>
-  
+
   <div class="site">
-  
-    <div class = "Topsection"> 
+
+    <div class="bannerBox">
       <div class="banner"></div>
-      <div class="navbar">
-          <ul>
-            <li><a href="https://danntdm.github.io/">Home</a></li>
-            <li><button type= "button" id = "openAbout">About & FAQ</button></li>
-            <li><button type= "button" id = "openPortfolio">Portfolio</button></li>
-            <li><button type= "button" id = "openContact">Contact</button></li>
-            
-          </ul>
-      </div>
     </div>
-    
+
     <div class="Bottomsection">
       <div class="homeContent">
-        <div class='homeContentInner'>
+        <div class="panelTitlebar">
+          <span class="titlebar-text">Danntdm — Home</span>
+          <span class="titlebar-buttons" aria-hidden="true">
+            <span class="titlebar-btn btnMin"></span>
+            <span class="titlebar-btn btnMax"></span>
+            <span class="titlebar-btn btnClose">x</span>
+          </span>
+        </div>
+        <div class="navbar">
+          <ul>
+            <li><button type="button" data-open="aboutPanel">About &amp; FAQ</button></li>
+            <li><button type="button" data-open="portfolioPanel">Portfolio</button></li>
+            <li><button type="button" data-open="contactPanel">Contact</button></li>
+          </ul>
+        </div>
+        <div class="clientArea">
           <main>
-            <h3>&lt;---------- Welcome ----------&gt;</h3>
-            <p>/*</p>
-            <p>
-              Hi, my name’s Daniel!
-            </p>
-        
-            <p>
-              I’m a Computer Science student building projects and many other ideas.
-              I do research on AI, and part-time game dev. I've dabbled with electronics,
-              robotics and more — I don’t really stick to just one thing.
-            </p>
-            <p>*/</p>
-            
-            <p>------------------------------------------------------------</p>
-            <p><br>/*</p>
-             <!--<img src="Images/Dodecahedron.gif" class="cornerGif" alt="decorative gif"-->
-            <iframe
-              src="/dodeca/index.html"
-              class="cornerGif"
-              title="Dodecahedron widget"
-              style="width:340px; height:250px; border:0; overflow:hidden; display:block; margin-left:auto; margin-right:16px; margin-top:-12px;"
-            ></iframe>
-  
-            <p><br>
-              This site is more or less a personal space — just to experiment, document
-              projects, and keep track of whatver im doing.
-            </p>
-        
-            <p><br><br><br>
-              My GitHub:
-              <a href="https://github.com/Danntdm" target="blank" class="gitlink">
-                github.com/Danntdm
-              </a>
-            </p>
-            <p>*/</p>
-          </main>
-          </div>
-      </div>
-    
-    </div>
-  </div>
-  
-  <div class="panels">
-  
-    <div class="aboutPanel" id = "aboutPanel">
-      <div class="aboutHeader" id="aboutHeader">
-          <span class="headerText">About & FAQ</span>
-          <button type="button" id="closeAbout">x</button>
-      </div>
-      <div class="aboutContent">
-          <div class="aboutInner">
-              <strong>About Me</strong>
-              <p>
-                  This window just contains general info about the site and myself.
-                  The site itself kinda just serves as a personal area to put random stuff, whether it be projects,
-                  thoughts or whatever I'm doing at the time, can't say I'll be consistent with updates
-                  but! I'll try.
-              </p>
-  
-              <p>
-                  I'm currently a third-year college student. Most of my time is spent on a lot of things, but notably at school I'm starting on AI research with some peers, I aim to make it more ethical meanwhile limiting privacy issues that come with most AI services. Though I do a lot of other things too. For example, one cool project I did was a one-off thing where I helped create an interactible but disability friendly book for kids.
-              </p>
-  
-              <p>
-                  Outside of that I loveeee sports and music. Real Madrid for life. Music-wise I've been playing instruments for a while, mainly the guitar but I can also play some piano and bass guitar! Some of my favorite genres are RnB, jazz, and a ton more (Listen to Shibuya-kei NOW).
-              </p>
-  
-              <hr class="etch etch-margin">
-  
-              <div class="likesDislikesContainer">
-                  <div class="likesDislikesColumn">
-                      <strong>Likes:</strong>
-                      <ul class="contentList">
-                          <li>Science (its cool)</li>
-                          <li>CARS!!</li>
-                          <li>Cyberpunk 2077</li>
-                          <li>Cymbals (the band)</li>
-                          <li>Shibuya-Kei</li>
-                      </ul>
-                  </div>
-                  <div class="likesDislikesColumn">
-                      <strong>Dislikes:</strong>
-                      <ul class="contentList">
-                          <li>Tomatoes</li>
-                          <li>AI (unethical ai)</li>
-                          <li>Mosquitos</li>
-                      </ul>
-                  </div>
+            <h3><span class="ruleDeco">&lt;----------</span> Welcome <span class="ruleDeco">----------&gt;</span></h3>
+
+            <div class="hero">
+              <div class="hero-text">
+                <p class="deco">/*</p>
+
+                <p>
+                  Hi, my name’s Daniel!
+                </p>
+
+                <p>
+                  I’m a Computer Science student building projects and many other ideas.
+                  I do research on AI, and part-time game dev. I've dabbled with electronics,
+                  robotics and more — I don’t really stick to just one thing.
+                </p>
+
+                <p>
+                  This site is more or less a personal space — just to experiment, document
+                  projects, and keep track of whatver im doing.
+                </p>
+
+                <p>
+                  My GitHub:
+                  <a href="https://github.com/Danntdm" target="_blank" rel="noopener" class="gitlink">
+                    github.com/Danntdm
+                  </a>
+                </p>
+
+                <p class="deco">*/</p>
               </div>
 
-          <hr class="etch etch-margin">
+              <div class="hero-widget">
+                <!--<img src="Images/Dodecahedron.gif" alt="decorative gif">-->
+                <iframe
+                  src="/dodeca/index.html"
+                  class="cornerGif"
+                  title="Dodecahedron widget"
+                  loading="lazy"
+                ></iframe>
+              </div>
+            </div>
+
+            <p class="deco">------------------------------------------------------------</p>
+
+            <section class="featured">
+              <h4 class="sectionTitle"><span class="ruleDeco">&lt;----------</span> Featured Projects <span class="ruleDeco">----------&gt;</span></h4>
+
+              <div class="projectGrid">
+
+                <button type="button" class="project-item" data-open="proj1">
+                  <img class="project-icon" src="/Images/icons/directory_closed-3.png" alt="" width="32" height="32">
+                  <span class="project-name"><strong>Placeholder_01.exe</strong></span>
+                  <span class="project-desc">Placeholder — short one-line description.</span>
+                </button>
+
+                <button type="button" class="project-item" data-open="proj2">
+                  <img class="project-icon" src="/Images/icons/directory_closed-3.png" alt="" width="32" height="32">
+                  <span class="project-name"><strong>Placeholder_02.exe</strong></span>
+                  <span class="project-desc">Placeholder — short one-line description.</span>
+                </button>
+
+                <button type="button" class="project-item" data-open="proj3">
+                  <img class="project-icon" src="/Images/icons/directory_closed-3.png" alt="" width="32" height="32">
+                  <span class="project-name"><strong>Placeholder_03.exe</strong></span>
+                  <span class="project-desc">Placeholder — short one-line description.</span>
+                </button>
+
+              </div>
+            </section>
+          </main>
+        </div>
+
+        <div class="statusBar">
+          <span class="statusPanel" id="statusCount"></span>
+          <span class="statusPanel statusGrow">Ready</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="panels">
+
+    <div class="window" id="aboutPanel" hidden>
+      <div class="titlebar">
+          <span class="titlebar-text">About &amp; FAQ</span>
+          <button type="button" class="titlebar-close" data-close aria-label="Close">x</button>
+      </div>
+      <div class="window-body">
+          <strong>About Me</strong>
+          <p>
+              This window just contains general info about the site and myself.
+              The site itself kinda just serves as a personal area to put random stuff, whether it be projects,
+              thoughts or whatever I'm doing at the time, can't say I'll be consistent with updates
+              but! I'll try.
+          </p>
+
+          <p>
+              I'm currently a third-year college student. Most of my time is spent on a lot of things, but notably at school I'm starting on AI research with some peers, I aim to make it more ethical meanwhile limiting privacy issues that come with most AI services. Though I do a lot of other things too. For example, one cool project I did was a one-off thing where I helped create an interactible but disability friendly book for kids.
+          </p>
+
+          <p>
+              Outside of that I loveeee sports and music. Real Madrid for life. Music-wise I've been playing instruments for a while, mainly the guitar but I can also play some piano and bass guitar! Some of my favorite genres are RnB, jazz, and a ton more (Listen to Shibuya-kei NOW).
+          </p>
+
+          <hr class="etch">
+
+          <div class="likesDislikesContainer">
+              <div class="likesDislikesColumn">
+                  <strong>Likes:</strong>
+                  <ul class="contentList">
+                      <li>Science (its cool)</li>
+                      <li>CARS!!</li>
+                      <li>Cyberpunk 2077</li>
+                      <li>Cymbals (the band)</li>
+                      <li>Shibuya-Kei</li>
+                  </ul>
+              </div>
+              <div class="likesDislikesColumn">
+                  <strong>Dislikes:</strong>
+                  <ul class="contentList">
+                      <li>Tomatoes</li>
+                      <li>Super hot days</li>
+                      <li>Mosquitos</li>
+                      <li>idk?</li>
+
+                  </ul>
+              </div>
+          </div>
+
+          <hr class="etch">
 
           <strong>FAQ</strong>
           <p><strong>What is this site?</strong><br>
           A digital portfolio for whatever I'm up to.</p>
-      
+
           <p><strong>What things are used?</strong><br>
           Website itself is just HTML, CSS, JavaScript, otherwise just depends on the project.</p>
-      
+
           <p><strong>Is this site finished?</strong><br>
           No. Ill update it with things when I can.</p>
-        </div>
       </div>
     </div>
-    
-    
-    
-    <div class="portfolioPanel" id="portfolioPanel">
-      <div class="portfolioHeader" id="portfolioHeader">
-        <span class="portfolioText">Portfolio</span>
-        <button type="button" id="closePortfolio">x</button>
+
+
+
+    <div class="window" id="portfolioPanel" hidden>
+      <div class="titlebar">
+        <span class="titlebar-text">Portfolio</span>
+        <button type="button" class="titlebar-close" data-close aria-label="Close">x</button>
       </div>
-      <div class="portfolioContent" id="portfolioContent">
-        <div class="portfolioInner">
-          <p class="selectPrompt">Select an item to view details:</p>
-          <hr class="etch" style="margin: 15px 0;">
+      <div class="window-body">
+        <p class="selectPrompt">Select an item to view details:</p>
+        <hr class="etch">
 
-          
-          <div class="projectGrid">
-            
-            <div class="project-item">
-              <div class="project-icon">📂</div>
-              <div class="project-name"><strong>Interactive_Book.exe</strong></div>
-              <div class="project-desc">Disability-friendly project for kids.</div>
-            </div>
 
-            <div class="project-item">
-              <div class="project-icon">📂</div>
-              <div class="project-name"><strong>AI_Research.log</strong></div>
-              <div class="project-desc">University research on AI.</div>
-            </div>
+        <div class="projectGrid">
 
-            <div class="project-item projectItemEmpty">
-              <div class="project-icon">📄</div>
-              <div class="project-name"><strong>Empty_Slot</strong></div>
-              <div class="project-desc">System waiting for new data...</div>
-            </div>
+          <button type="button" class="project-item" data-open="proj1">
+            <img class="project-icon" src="/Images/icons/directory_closed-3.png" alt="" width="32" height="32">
+            <span class="project-name"><strong>Placeholder_01.exe</strong></span>
+            <span class="project-desc">Placeholder description.</span>
+          </button>
 
+          <button type="button" class="project-item" data-open="proj2">
+            <img class="project-icon" src="/Images/icons/directory_closed-3.png" alt="" width="32" height="32">
+            <span class="project-name"><strong>Placeholder_02.exe</strong></span>
+            <span class="project-desc">Placeholder description.</span>
+          </button>
+
+          <div class="project-item projectItemEmpty">
+            <img class="project-icon" src="/Images/icons/file_lines-0.png" alt="" width="32" height="32">
+            <span class="project-name"><strong>Empty_Slot</strong></span>
+            <span class="project-desc">System waiting for new data...</span>
           </div>
+
         </div>
       </div>
     </div>
-    
-    
-    
-   <div class="contactPanel" id="contactPanel">
-    <div class="contactHeader" id="contactHeader">
-      <span class="contactText">Contact</span>
-      <button type="button" id="closeContact">x</button>
+
+
+
+   <div class="window" id="contactPanel" hidden>
+    <div class="titlebar">
+      <span class="titlebar-text">Contact</span>
+      <button type="button" class="titlebar-close" data-close aria-label="Close">x</button>
     </div>
-    <div class="contactContent" id="contactContent">
-      <div class="contactInner">
-        <strong>Contact Information</strong>
-        <p>If you'd like to get in touch, you're free to visit or message me from any of the platforms below:</p>
-        
-        <ul class="contactList">
-          <li>
-            <strong>Email:</strong> <a href="mailto:danntdm.unopened596@slmail.me">danntdm.unopened596@slmail.me</a>
-          </li>
-          <li>
-            <strong>GitHub:</strong> <a href="https://github.com/Danntdm" target="_blank">github.com/Danntdm</a>
-          </li>
-          <li>
-            <strong>Discord: </strong> <span class="highlightText">danntdm</span>
-          </li>
-        </ul>
+    <div class="window-body">
+      <strong>Contact Information</strong>
+      <p>If you'd like to get in touch, you're free to visit or message me from any of the platforms below:</p>
+
+      <ul class="contactList">
+        <li>
+          <strong>Email:</strong> <a href="mailto:danntdm.unopened596@slmail.me">danntdm.unopened596@slmail.me</a>
+        </li>
+        <li>
+          <strong>GitHub:</strong> <a href="https://github.com/Danntdm" target="_blank" rel="noopener">github.com/Danntdm</a>
+        </li>
+        <li>
+          <strong>Discord: </strong> <span class="highlightText">danntdm</span>
+        </li>
+      </ul>
+    </div>
+    </div>
+
+
+
+
+    <div class="window" id="proj1" hidden>
+      <div class="titlebar">
+        <span class="titlebar-text">Placeholder_01.exe</span>
+        <button type="button" class="titlebar-close" data-close aria-label="Close">x</button>
+      </div>
+      <div class="window-body">
+        <strong>Placeholder Project 01</strong>
+
+        <dl class="specs">
+          <dt>Role</dt><dd class="todo">Placeholder</dd>
+          <dt>Stack</dt><dd class="todo">Placeholder</dd>
+          <dt>Year</dt><dd class="todo">Placeholder</dd>
+          <dt>Status</dt><dd class="todo">Placeholder</dd>
+        </dl>
+
+        <hr class="etch">
+
+        <p class="todo">
+          Placeholder — a couple of lines on what the project does, why you built it,
+          and the part you're actually proud of.
+        </p>
+
+        <hr class="etch">
+
+        <p class="todo">Placeholder — link to the repo, a demo, or a writeup.</p>
       </div>
     </div>
+
+
+
+    <div class="window" id="proj2" hidden>
+      <div class="titlebar">
+        <span class="titlebar-text">Placeholder_02.exe</span>
+        <button type="button" class="titlebar-close" data-close aria-label="Close">x</button>
+      </div>
+      <div class="window-body">
+        <strong>Placeholder Project 02</strong>
+
+        <dl class="specs">
+          <dt>Role</dt><dd class="todo">Placeholder</dd>
+          <dt>Stack</dt><dd class="todo">Placeholder</dd>
+          <dt>Year</dt><dd class="todo">Placeholder</dd>
+          <dt>Status</dt><dd class="todo">Placeholder</dd>
+        </dl>
+
+        <hr class="etch">
+
+        <p class="todo">
+          Placeholder — a couple of lines on what the project does, why you built it,
+          and the part you're actually proud of.
+        </p>
+
+        <hr class="etch">
+
+        <p class="todo">Placeholder — link to the repo, a demo, or a writeup.</p>
+      </div>
     </div>
-    
-    
-    
-    
+
+
+
+    <div class="window" id="proj3" hidden>
+      <div class="titlebar">
+        <span class="titlebar-text">Placeholder_03.exe</span>
+        <button type="button" class="titlebar-close" data-close aria-label="Close">x</button>
+      </div>
+      <div class="window-body">
+        <strong>Placeholder Project 03</strong>
+
+        <dl class="specs">
+          <dt>Role</dt><dd class="todo">Placeholder</dd>
+          <dt>Stack</dt><dd class="todo">Placeholder</dd>
+          <dt>Year</dt><dd class="todo">Placeholder</dd>
+          <dt>Status</dt><dd class="todo">Placeholder</dd>
+        </dl>
+
+        <hr class="etch">
+
+        <p class="todo">
+          Placeholder — a couple of lines on what the project does, why you built it,
+          and the part you're actually proud of.
+        </p>
+
+        <hr class="etch">
+
+        <p class="todo">Placeholder — link to the repo, a demo, or a writeup.</p>
+      </div>
+    </div>
+
+
+
   </div>
-  
-  
-  
-  
-<script>
-  function setupWindow(panelId, headerId, openBtnId, closeBtnId) {
-    const windowElement = document.getElementById(panelId);
-    const header = document.getElementById(headerId);
-    const openBtn = document.getElementById(openBtnId);
-    const closeBtn = document.getElementById(closeBtnId);
 
 
-    const originalTop = windowElement.style.top || window.getComputedStyle(windowElement).top;
-    const originalLeft = windowElement.style.left || window.getComputedStyle(windowElement).left;
 
-    openBtn.addEventListener("click", () => {
-      windowElement.style.display = "block";
-      bringToFront();
-    });
+  <div class="startMenu" id="startMenu" hidden>
+    <div class="startMenuSpine"><span>Danntdm<b>95</b></span></div>
+    <div class="startMenuItems" id="startMenuItems">
+      <p class="startMenuEmpty">(nothing here yet)</p>
+    </div>
+  </div>
 
-    closeBtn.addEventListener("click", () => {
-      windowElement.style.display = "none";
-      
-      windowElement.style.top = originalTop;
-      windowElement.style.left = originalLeft;
-    });
+  <div class="taskbar">
+    <button type="button" class="startButton" id="startButton" aria-expanded="false" aria-controls="startMenu">
+      <img src="/Images/icons/windows_slanted-0.png" alt="" width="16" height="16">
+      <span>Start</span>
+    </button>
 
-    // --- Drag Logic ---
-    let isDragging = false;
-    let initialX, initialY;
+    <div class="quickLaunch">
+      <button type="button" class="quickButton" id="showDesktop"
+              data-action="show-desktop" title="Show Desktop">
+        <img src="/Images/icons/desktop_w95-1.png" alt="Show Desktop" width="16" height="16">
+      </button>
+    </div>
 
-    header.addEventListener('mousedown', startDragging);
+    <div class="taskbarWindows" id="taskbarWindows"></div>
 
-    function startDragging(e) {
-      if (e.target.tagName === 'BUTTON' || e.target.closest('button')) return;
+    <div class="tray"><span id="clock" class="clock"></span></div>
+  </div>
 
-      isDragging = true;
-      bringToFront();
+  <script src="/main.js"></script>
 
-      initialX = e.clientX - windowElement.offsetLeft;
-      initialY = e.clientY - windowElement.offsetTop;
-
-      document.addEventListener('mousemove', drag);
-      document.addEventListener('mouseup', stopDragging);
-      e.preventDefault();
-    }
-
-    function drag(e) {
-      if (!isDragging) return;
-      windowElement.style.left = `${e.clientX - initialX}px`;
-      windowElement.style.top = `${e.clientY - initialY}px`;
-    }
-
-    function stopDragging() {
-      isDragging = false;
-      document.removeEventListener('mousemove', drag);
-      document.removeEventListener('mouseup', stopDragging);
-    }
-
-    function bringToFront() {
-      document.querySelectorAll('.aboutPanel, .portfolioPanel, .contactPanel').forEach(p => {
-        p.style.zIndex = "900";
-      });
-      windowElement.style.zIndex = "1000";
-    }
-  }
-
-  setupWindow('aboutPanel', 'aboutHeader', 'openAbout', 'closeAbout');
-  setupWindow('portfolioPanel', 'portfolioHeader', 'openPortfolio', 'closePortfolio');
-  setupWindow('contactPanel', 'contactHeader', 'openContact', 'closeContact');
-</script>
-  
-  
   </body>
-  
+
 
 </html>

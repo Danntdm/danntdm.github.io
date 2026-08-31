@@ -99,14 +99,36 @@ gui.add(params, 'detail', 0, 5, 1).onChange(() => {
   wireframeModel.geometry = geometry;
 });
 
+
+let running = true;
+
+const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+window.addEventListener('message', (event) => {
+  if (event.origin !== window.location.origin) return;
+
+  const command = event.data && event.data.dodeca;
+  if (command === 'pause') {
+    running = false;
+  } else if (command === 'run' && !running) {
+    running = true;
+    animate();
+  }
+});
+
 function animate() {
+  if (!running || reduceMotion) return;
   requestAnimationFrame(animate);
   dodecahedron.rotation.y += 0.005;
   dodecahedron.rotation.x += 0.005;
   renderer.render(scene, camera);
 }
 
-animate();
+if (reduceMotion) {
+  renderer.render(scene, camera);
+} else {
+  animate();
+}
 
 
 
